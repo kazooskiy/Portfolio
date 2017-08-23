@@ -1,0 +1,312 @@
+<!Doctype html5>
+  <head>
+        <title>KAZURU TAKASE</title>
+        <link rel="icon" type="image/png" href="/iconx/favicon-16x16.png" sizes="16x16">
+        <script src="jquery-1.11.2.js"></script>
+        <script src="jquery.fullPage.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+          <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+          <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+ 
+  <style>
+  .content {
+    padding: 5%;
+  }
+    .section:nth-of-type(1){
+      background-image: url(https://orig15.deviantart.net/fca3/f/2017/233/2/f/personal___frontpage_by_lavitt-dbkwfxe.png);
+      background-color: #3ebdff;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+      text-align: left;
+    }
+    
+    .section:nth-of-type(2){
+      background-color: #ffffff;
+      border-width: 10px;
+      border-color: red;
+      background-size: 100%;
+      text-align: center;
+    }
+    
+    .section:nth-of-type(3){
+      background-color: #ffffff;
+      background-size: 100%;
+
+    }
+    
+    .section:nth-of-type(4){
+      background-color: #3ebdff;
+      background-size: 50%;
+      text-align: center;
+
+    } 
+
+
+#works {
+  text-align: center;
+  float: center;
+
+}
+
+
+.cbp-af-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+  height: 100px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.cbp-af-header .cbp-af-inner {
+   width: 100%;
+   max-width: 69em;
+   margin: 0 auto;
+   padding: 0 1.875em;
+ }
+
+.cbp-af-header nav {
+  display: inline-block;
+  position: relative;
+}
+
+.cbp-af-header nav a {
+  line-height: 100px;
+}
+
+
+.cbp-af-header nav {
+  float: right;
+}
+
+.cbp-af-header nav a {
+  color: #000000;
+  font-weight: 700;
+  margin: 0 0 0 20px;
+  font-size: 1.4em;
+}
+
+
+.cbp-af-header nav a:hover {
+  color: #333333;
+}
+
+
+
+/* Transitions and class for reduced height */
+.cbp-af-header nav a {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cbp-af-header.cbp-af-header-shrink {
+  height: 50px;
+}
+
+.cbp-af-header.cbp-af-header-shrink nav a {
+  line-height: 90px;
+}
+
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+  
+  .cbp-af-header .cbp-af-inner {
+    width: 100%;
+  }
+
+  .cbp-af-header nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
+
+  .cbp-af-header nav a {
+    line-height: 115px;
+  }
+
+  .cbp-af-header nav a {
+    margin: 0 10px;
+  }
+
+  .cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 20px;
+  }
+
+
+  .cbp-af-header.cbp-af-header-shrink nav a {
+    font-size: 1em;
+  }
+
+
+@media screen and (max-width: 32.25em) {
+  .cbp-af-header nav a {
+    font-size: 1em;
+  }
+
+
+@media screen and (max-width: 24em) {
+  .cbp-af-header nav a,
+  .cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 1;
+  }
+
+
+  </style>
+  
+  
+  </head>
+  
+  <body>
+    <script>
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+      anchor:['home','about','works','contact'],
+      menu: '#myMenu',
+      scrollBar: true,
+      verticalCentered: true,
+      //scrollOverflow: true,
+      //continuousVertical: true,
+      parallax: true,
+      //navigation: true,
+      slidesNavigation: true,
+      controlArrows: true,
+      fitToSection: false,
+      lazyLoading: true,
+
+    });
+});
+
+
+
+    </script>
+    
+
+<!--add #4-->
+<div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+
+<div id="fullpage">
+    <div class="section" id="home">
+      <div class = "content">
+
+              <span style="font-family:helvetica;font-size:550%"><strong> KAZURU TAKASE</strong></span></br>
+              <span style="font-family:helvetica;font-size:200%">Junior designer based in NJ / NYC </span>
+
+
+
+    </div> <!--content-->
+
+    </div> <!--id = home--> 
+
+
+    
+    <div class="section" id="about">
+      <div class = "content">
+
+            <span style="font-family:helvetica;font-size:200%;">
+            <h1 style="font-family:helvetica;"></h1>
+            <p>New Jersey Institute of Technology '16 </br>
+          UX / UI , Illustration , Graphic Design , HTML / CSS, Social Media</p>
+            
+            <p>Tools: Photoshop, Illustrator, After Effects, InDesign </br>
+              Sketch, Axure, Notebook & Pen</p>
+
+
+            </span>
+      </div>
+    </div>
+
+
+    <div class="section" id="works">
+      <div class = "content">
+        <div class="slide"> <a href="___">
+          <img data-src="Portfolio - employeeit high trans.png" style="max-height:65%; max-width: 80%"></a> 
+        </div>
+        <div class="slide"> 
+          <img data-src="Portfolio - dating app high trans.png" style="max-height: 75%; max-width: 80%"> 
+        </div>
+
+        <div class="slide"> 
+          <img data-src="Portfolio - telluswho(3) high trans.png" style="max-height: 65%; max-width: 80%">
+          <img data-src="Portfolio - telluswho(4) high trans.png" style="max-height: 65%; max-width: 80%">
+        </div> 
+        <div class="slide"> 
+          <img data-src="Portfolio - telluswho(1) high trans.png" style="max-height: 55%; max-width: 55%">
+          <img data-src="Portfolio - telluswho(2) high trans.png" style="max-height: 60%; max-width: 60%"> 
+        </div>
+        <div class="slide"> 
+          <img data-src="Portfolio - newarkgives(1) high trans.png" style="max-height: 55%; max-width: 55%">
+          <img data-src="Portfolio - newarkgives(2) high trans.png" style="max-height: 55%; max-width: 55%">
+        </div>
+        <div class="slide"> 
+          <img data-src="Digpops 3.png" style="max-height: 40%; max-width: 40%">  
+          <img data-src="Digpops 1  copy.png" style="max-height: 40%; max-width: 40%">
+          <img data-src="digipops---poster(boyMusic).gif" style="max-height: 40%; max-width: 40%"> 
+          <img data-src="digipops---poster(catTravels).gif" style="max-height: 40%; max-width: 40%">
+        </div>
+        <div class="slide"> 
+          <img data-src="Digipops - PIF ft Avowed1 (ver1).png" style="max-height: 35%; max-width: 35%"> 
+          <img data-src="Digipops - PIF ft Avowed2 (ver2-2).jpg" style="max-height: 35%; max-width: 35%"> 
+          <img data-src="Digipops - PIF ft Vergangenheitsbewaltigung1(whitelogo).png" style="max-height: 35%; max-width: 35%"> 
+          <img data-src="Digipops - PIF ft Vergangenheitsbewaltigung2(logowhite).png" style="max-height: 35%; max-width: 35%"> 
+          <img data-src="Digipops - PIF ft Maddoggin1 (ver1).png" style="max-height: 35%; max-width: 35%"> 
+          <img data-src="Digipops - PIF ft Maddoggin 2 (ver2).png" style="max-height: 35%; max-width: 35%"> 
+        </div>
+        <div class="slide"> 
+          <img data-src="Poem_Rain.png" style="max-height: 70%; max-width: 70%"> 
+        </div>
+
+      </div>
+    </div>
+    
+
+
+    <div class="section" id="contact">
+      <div class = "content">
+
+       <span style="font-family:helvetica;font-size:550%; text-align:center"><strong> Thank You!</strong></span></br>
+          <span style="font-family:helvetica;font-size: 30px;">
+            <h1 style="font-family:helvetica;"></h1>
+            <p>
+            <a href="mailto:kazuru.takase@gmail.com" ><img src="Social_icons_v8\Color\SVG\Mail_Color.svg" ></a>
+            <a href="https://www.dropbox.com/sh/tp1yvv5jhwvr3r2/AABq13We6w3fqU4DfDtuUJPKa?dl=0"><img src="Social_icons_v8\Color\SVG\Dropbox_color.svg" ></a>
+            <a href="https://www.linkedin.com/in/kazuru-takase-248873b2/"><img src="Social_icons_v8\Color\SVG\LinkedIN_Color.svg"></a>
+            </p> 
+            </span>
+
+ <!-- <p><a class="btn btn-primary btn-lg" href="KT_Resume2017.pdf" role="button">Resume</a></p>
+
+<button type="button" class="btn btn-primary">Primary</button> -->
+
+
+    </div>
+    </div>
+</div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
